@@ -7,7 +7,7 @@ param location string = resourceGroup().location
 @allowed([
   'S0'
 ])
-param sku string = 'S0'
+param sku string = 'S'
 
 resource cognitiveService 'Microsoft.CognitiveServices/accounts@2021-10-01' = {
   name: cognitiveServiceName
